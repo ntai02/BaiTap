@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Tinh chi so can nang cua co the</h3>
+<p><input id = "chieucao" type="text">height</p>
+<p><input id = "cannang" type="text">weight</p>
+<button id="ketqua">Ket qua</button>
+<p id="BMI"></p>
+</body>
+<script>
+    let BMI=document.getElementById("ketqua")
+    ketqua.addEventListener("click",kqua)
+      function kqua (){
+        let height = document.getElementById("chieucao").value
+        let weight = document.getElementById("cannang").value
+        let bmi = weight / (height * height)
+        document.getElementById("BMI").innerHTML = "BMI" + bmi
+          if (bmi <18){
+              document.write("Underweight")
+          }
+          else if (bmi < 25){
+              document.write("Normal")
+          }
+      }
+
+
+</script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diemkiemtra = +prompt("Được mấy điểm kiểm tra")
+    let diemgiuaki = +prompt("Điểm giữa kì có nổi điểm trung bình không")
+    let diemcuoiki = +prompt("Điểm cuối kì mà dưới 5 điểm đừng hòng ăn cơm")
+    let xephang = (diemkiemtra+diemgiuaki+diemcuoiki)/3
+         if (xephang>=8) {
+             alert("Học sinh giỏi rồi, ghê chưa ghê chưa")
+         }else if (xephang>=6.5){
+             alert(" May đấy con, học sinh khá luôn ")
+         }else {
+             alert("Đồ ngu, Đồ ăn hại, cút mẹ mày đi")
+         }
+</script>
+</body>
+</html>

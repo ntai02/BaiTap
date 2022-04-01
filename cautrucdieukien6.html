@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let luonghoahong = 0;
+    let luongbanhang = +prompt("Ngày bán được bao nhiêu tiền")
+         if (luongbanhang<=200) {
+             alert("Ngày bán được chưa nổi 200K mà đòi nhận hoa hồng")
+         }else if (luongbanhang<=500) {
+             luonghoahong = luongbanhang * 10/100;
+             alert("Của em được " + luonghoahong + "K Thêm chút hoa hồng cho có động lực ")
+         }else {
+             luonghoahong = luongbanhang * 20/100
+                alert("Của em được" + luonghoahong + "K Em bán hàng hút khách quá tháng sau tăng lương nhé, OK")
+
+         }
+</script>
+</body>
+</html>

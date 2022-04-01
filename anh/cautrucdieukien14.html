@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Giải Phương Trình Bậc 1</h1>
+<h3>Ax + B = 0</h3>
+<input id="soA" type="text"><b>Số thứ 1(A)</b>
+<input id="soB" type="text"><b>Số thứ 2(B)</b>
+<button id="Ketqua">Kết quả</button>
+<p id="inraketqua"></p>
+</body>
+<script>
+    document.getElementById("Ketqua").addEventListener("click", kqua);
+    let soB = document.getElementById("soB");
+    let A;
+    let B;
+    // let soA = document.getElementById("soA");
+    function kqua() {
+        A = +document.getElementById("soA").value;
+        B = +soB.value;
+        console.log(A);
+        console.log(B);
+
+         if (A == 0 && B == 0) {
+            alert("Phương Trình vô số nghiệm")
+         } else if (A == 0 && B != 0) {
+             alert("Phương Trình vô nghiệm")
+        } else if (A !== 0 && B == 0) {
+            alert("Phương trình có nghiệm x = 0")
+         } else {
+            alert("Phương trình có nghiệm x =" + -B / A)
+        }
+    }
+
+
+</script>
+</html>

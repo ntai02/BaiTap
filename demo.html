@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Đăng nhập</h3>
+<p>Tài khoản :</p>
+<input id="Taikhoan" type="text">
+<p>Mật Khẩu</p>
+<input id="Matkhau" type="text"><br>
+<br>
+<button id="Dangnhap">Đăng nhập</button>
+<p id="coo"></p>
+</body>
+<script>
+    let dangnhap = document.getElementById("Dangnhap")
+    dangnhap.addEventListener('click', ketqua)
+
+    function ketqua() {
+        let taikhoan = document.getElementById("Taikhoan").value
+        console.log(taikhoan)
+        let matkhau = document.getElementById("Matkhau").value
+        console.log(matkhau)
+        if (taikhoan == 'MrTai' && matkhau == 'abcxyz') {
+            document.write('Hello Bạn Nhỏ!')
+        } else if (taikhoan == "" || matkhau == "") {
+            document.getElementById("coo").innerText = "Vui lòng điền tài khoản hoặc mật khẩu"
+        } else {
+            document.getElementById("coo").innerText = "Thông tin tài khoản hoặc mật khẩu không chính xác";
+        }
+    }
+</script>
+</html>
